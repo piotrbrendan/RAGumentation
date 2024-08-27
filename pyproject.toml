@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "aws-ragumentation"
+version = "0.1.0"
+description = "PoC RAG pipeline for retrieving AWS documentation"
+authors = ["piotrbrendan"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+tiktoken = "^0.7.0"
+langchain = "^0.2.13"
+gradio = "^4.41.0"
+langchain-aws = "^0.1.16"
+langchain-community = "^0.2.12"
+faiss-cpu = "^1.8.0.post1"
+unstructured = {extras = ["md"], version = "^0.15.3"}
+langchain-unstructured = "^0.1.1"
+langchain-text-splitters = "^0.2.2"
+python-dotenv = "^1.0.1"
+python-magic = "^0.4.27"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 120
+indent-width = 4

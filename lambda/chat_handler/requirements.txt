@@ -1,0 +1,6 @@
+faiss-cpu==1.8.0.post1
+numpy==1.26.4
+langchain-community==0.2.12
+langchain-core==0.2.30
+langchain-text-splitters==0.2.2
+langchain-aws==0.1.16
